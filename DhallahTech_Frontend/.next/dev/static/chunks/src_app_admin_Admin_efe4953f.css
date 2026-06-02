@@ -1,0 +1,149 @@
+/* [project]/src/app/admin/Admin.css [app-client] (css) */
+body {
+  color: var(--black);
+  background: #fff;
+}
+
+html {
+  background: var(--bg-gradient-light);
+}
+
+.AdminPage {
+  min-height: 100vh;
+  display: flex;
+}
+
+.AdminContent {
+  background: #fff;
+  flex: .9;
+  margin-right: 2px;
+  padding: 40px;
+}
+
+.card:hover {
+  transition: all .3s;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #00000014;
+}
+
+.home-page .grid > div {
+  grid-column: span 1 / span 1 !important;
+}
+
+.btn-accept-box {
+  color: #fff;
+  cursor: pointer;
+  background: #16a34a;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.btn-accept-box:hover {
+  background: #15803d;
+  transform: scale(1.05);
+}
+
+.btn-reject-box {
+  color: #fff;
+  cursor: pointer;
+  background: #dc2626;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.btn-reject-box:hover {
+  background: #b91c1c;
+  transform: scale(1.05);
+}
+
+.actions {
+  gap: 10px;
+  display: flex;
+}
+
+.status {
+  color: #3a1c56;
+  background: #ebe6f2;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.card h3, .card p, .stat-card span, .stat-card p {
+  font-size: 20px;
+}
+
+.home-container {
+  background-color: #fcfcfc;
+  padding: 40px;
+}
+
+.welcome-section {
+  color: #fff;
+  background: linear-gradient(135deg, #4b2c71 0%, #6d3b96 100%);
+  border-radius: 30px;
+  margin-bottom: 40px;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #4b2c7126;
+}
+
+.task-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  display: grid;
+}
+
+.task-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 24px;
+  padding: 30px;
+  transition: all .3s;
+}
+
+.task-card:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px #0000000d;
+}
+
+.status-tag {
+  color: #4b2c71;
+  background: #f5f3ff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.icon-box {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.quote-box {
+  text-align: center;
+  color: #4b2c71;
+  background-color: #fbfaff;
+  border: 1px dashed #ddd;
+  border-radius: 24px;
+  margin-top: 50px;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=src_app_admin_Admin_efe4953f.css.map*/

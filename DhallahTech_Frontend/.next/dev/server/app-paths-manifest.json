@@ -1,0 +1,21 @@
+{
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/signup/page": "app/(auth)/signup/page.js",
+  "/(auth)/verificationCode/page": "app/(auth)/verificationCode/page.js",
+  "/admin/complaints/page": "app/admin/complaints/page.js",
+  "/admin/home/page": "app/admin/home/page.js",
+  "/admin/officeReq/[id]/page": "app/admin/officeReq/[id]/page.js",
+  "/admin/officeReq/page": "app/admin/officeReq/page.js",
+  "/customer/chats/page": "app/customer/chats/page.js",
+  "/customer/create-report/page": "app/customer/create-report/page.js",
+  "/offecer/OfficeRequest/page": "app/offecer/OfficeRequest/page.js",
+  "/offecer/chats/page": "app/offecer/chats/page.js",
+  "/offecer/complaints/edit/[id]/page": "app/offecer/complaints/edit/[id]/page.js",
+  "/offecer/complaints/page": "app/offecer/complaints/page.js",
+  "/offecer/dashboard/page": "app/offecer/dashboard/page.js",
+  "/offecer/my-reports/[id]/page": "app/offecer/my-reports/[id]/page.js",
+  "/offecer/my-reports/page": "app/offecer/my-reports/page.js",
+  "/offecer/request-status/page": "app/offecer/request-status/page.js",
+  "/offecer/upload/page": "app/offecer/upload/page.js",
+  "/page": "app/page.js"
+}

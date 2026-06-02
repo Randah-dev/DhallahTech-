@@ -1,0 +1,325 @@
+[00:00:03.492] Server  LOG     ✓ Ready in 2.4s
+[00:00:15.772] Server  LOG     ○ Compiling /customer/chats ...
+[00:00:19.564] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.738] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/customer/..." notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/customer/..." tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="layout" pagePath="customer/l...">
+                <SegmentTrieNode>
+                <script>
+                <script>
+                <ClientSegmentRoot Component={function CustomerLayout} slots={{...}} ...>
+                  <CustomerLayout params={Promise}>
+                    <div className="flex min-h..." dir="rtl">
+                      <Sidebar navItems={[...]} logo="/logo.png">
+                        <aside className="w-64 bg-wh...">
+                          <div>
+                          <nav>
+                          <div className="p-4 border-t">
+                            <button
+                              onClick={function Sidebar[<button>.onClick]}
++                             className={"w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center t..."}
+-                             className="w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center tra..."
+                            >
+                      ...
+            ...
+
+[00:00:54.957] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:35.197] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:47.567] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:14:42.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:14:52.079] Browser ERROR   خطأ في قراءة حالة المكتب بالـ Layout: {}
+[06:46:51.986] Browser LOG     ✅ تم حفظ userId بنجاح: 71rrAg4XyrrPwD72s8pu
+[06:46:51.986] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[06:46:51.986] Browser ERROR   Error setting up notifications on front-end: {"code":"app/no-app","customData":{"appName":"[DEFAULT]"},"name":"FirebaseError"}
+[06:46:52.448] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:17:04.537] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:17:29.979] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[08:17:29.979] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[09:47:17.915] Browser LOG     ✅ تم حفظ userId بنجاح: 71rrAg4XyrrPwD72s8pu
+[09:47:17.915] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[09:47:17.915] Browser LOG     FCM Token saved successfully! ✅
+[09:47:18.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:47:34.730] Server  LOG     ○ Compiling /offecer/my-reports/[id] ...
+[09:47:38.843] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[09:47:38.843] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[09:47:38.843] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[09:47:38.843] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:11:34.894] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[12:13:20.167] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:13:20.305] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/customer/..." notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/customer/..." tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="layout" pagePath="customer/l...">
+                <SegmentTrieNode>
+                <script>
+                <script>
+                <ClientSegmentRoot Component={function CustomerLayout} slots={{...}} ...>
+                  <CustomerLayout params={Promise}>
+                    <div className="flex min-h..." dir="rtl">
+                      <Sidebar navItems={[...]} logo="/logo.png">
+                        <aside className="w-64 bg-wh...">
+                          <div>
+                          <nav>
+                          <div className="p-4 border-t">
+                            <button
+                              onClick={function Sidebar[<button>.onClick]}
++                             className={"w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center t..."}
+-                             className="w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center tra..."
+                            >
+                      ...
+            ...
+
+[12:13:27.634] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:13:30.744] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:13:30.876] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/customer/..." notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/customer/..." tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="layout" pagePath="customer/l...">
+                <SegmentTrieNode>
+                <script>
+                <script>
+                <ClientSegmentRoot Component={function CustomerLayout} slots={{...}} ...>
+                  <CustomerLayout params={Promise}>
+                    <div className="flex min-h..." dir="rtl">
+                      <Sidebar navItems={[...]} logo="/logo.png">
+                        <aside className="w-64 bg-wh...">
+                          <div>
+                          <nav>
+                          <div className="p-4 border-t">
+                            <button
+                              onClick={function Sidebar[<button>.onClick]}
++                             className={"w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center t..."}
+-                             className="w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center tra..."
+                            >
+                      ...
+            ...
+
+[12:13:56.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:13:59.575] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[12:14:15.359] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[12:17:07.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:17:58.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:18:39.535] Browser LOG     بيانات التسجيل: {"email":"ahmed12@gmail.com","firstName":"ahmed","lastName":"abdullah","phone":"564555633","role":"موظف"}
+[12:19:30.206] Browser LOG     ✅ تم حفظ userId بنجاح: 85t60oSmtxHdRoxXFDO8
+[12:19:30.207] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[12:19:30.207] Browser ERROR   Error setting up notifications on front-end: {"code":"app/no-app","customData":{"appName":"[DEFAULT]"},"name":"FirebaseError"}
+[12:19:30.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:22:11.820] Browser LOG     ✅ تم حفظ userId بنجاح: RBqsI5mI6kGC5E2sN431
+[12:22:11.820] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[12:22:12.802] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:22:12.950] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/admin/home" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/admin/home" tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="layout" pagePath="admin/layo...">
+                <SegmentTrieNode>
+                <link>
+                <script>
+                <script>
+                <ClientSegmentRoot Component={function AdminLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+                  <AdminLayout params={Promise}>
+                    <div className="AdminPage ..." dir="rtl">
+                      <Sidebar navItems={[...]}>
+                        <aside className="w-64 bg-wh...">
+                          <div>
+                          <nav>
+                          <div className="p-4 border-t">
+                            <button
+                              onClick={function Sidebar[<button>.onClick]}
++                             className={"w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center t..."}
+-                             className="w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center tra..."
+                            >
+                      ...
+            ...
+
+[12:22:18.254] Server  LOG     🔍 [Debug] الـ ID المستخرج من الرابط حالياً هو: "p4HUrT8vYeeHx7bY5bC0"
+[12:22:18.469] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:22:18.595] Browser LOG     🔍 [Debug] الـ ID المستخرج من الرابط حالياً هو: p4HUrT8vYeeHx7bY5bC0
+[12:22:18.595] Browser LOG     🔍 [Debug] الـ ID المستخرج من الرابط حالياً هو: p4HUrT8vYeeHx7bY5bC0
+[12:22:18.595] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/admin/off..." notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/admin/off..." tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="layout" pagePath="admin/layo...">
+                <SegmentTrieNode>
+                <link>
+                <script>
+                <script>
+                <ClientSegmentRoot Component={function AdminLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+                  <AdminLayout params={Promise}>
+                    <div className="AdminPage ..." dir="rtl">
+                      <Sidebar navItems={[...]}>
+                        <aside className="w-64 bg-wh...">
+                          <div>
+                          <nav>
+                          <div className="p-4 border-t">
+                            <button
+                              onClick={function Sidebar[<button>.onClick]}
++                             className={"w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center t..."}
+-                             className="w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center tra..."
+                            >
+                      ...
+            ...
+
+[12:22:18.595] Browser LOG     === 🚀 بداية فحص جلب البيانات ===
+[12:22:18.595] Browser LOG     1. الـ ID المرسل لدالة getOfficeDetails هو: p4HUrT8vYeeHx7bY5bC0
+[12:22:18.961] Browser LOG     2. استجابة السيرفر الكاملة (response): {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:5000/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJCcXNJNW1JNmtHQzVFMnNONDMxIiwicm9sZSI6IkFETUlOIiwib2ZmaWNlSWQiOm51bGwsImlhdCI6MTc4MDM0MzI2NywiZXhwIjoxNzgwMzUwNDY3fQ.eJeLWyFqUNI-OvrKkgjKK_ZCDgmp3jlyoHmu6cvokdQ"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"legacyInterceptorReqResOrdering":true,"silentJSONParsing":true},"url":"/admin/office/p4HUrT8vYeeHx7bY5bC0","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"capacity":45,"cityName":"مكة المكرمة","createdAt":{"_nanoseconds":200000000,"_seconds":1780343246},"email":"office@gmail.com","fullAddress":"بجوار الحجاز مول الدور الارضي","id":"p4HUrT8vYeeHx7bY5bC0","location":"الستين ","managerName":"ahmed abdullah","notes":"","officeName":"مكتب مفقودات مكتبة جرير","officerId":"85t60oSmtxHdRoxXFDO8","phone":"+966512345678","workingHours":"8 am-8pm"},"success":true},"headers":{"content-length":"474","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":"OK"}
+[12:22:18.961] Browser LOG     3. البيانات بداخل response.data: {"data":{"capacity":45,"cityName":"مكة المكرمة","createdAt":{"_nanoseconds":200000000,"_seconds":1780343246},"email":"office@gmail.com","fullAddress":"بجوار الحجاز مول الدور الارضي","id":"p4HUrT8vYeeHx7bY5bC0","location":"الستين ","managerName":"ahmed abdullah","notes":"","officeName":"مكتب مفقودات مكتبة جرير","officerId":"85t60oSmtxHdRoxXFDO8","phone":"+966512345678","workingHours":"8 am-8pm"},"success":true}
+[12:22:18.961] Browser LOG     4. البيانات الصافية المستخرجة (actualData): {"capacity":45,"cityName":"مكة المكرمة","createdAt":{"_nanoseconds":200000000,"_seconds":1780343246},"email":"office@gmail.com","fullAddress":"بجوار الحجاز مول الدور الارضي","id":"p4HUrT8vYeeHx7bY5bC0","location":"الستين ","managerName":"ahmed abdullah","notes":"","officeName":"مكتب مفقودات مكتبة جرير","officerId":"85t60oSmtxHdRoxXFDO8","phone":"+966512345678","workingHours":"8 am-8pm"}
+[12:22:18.961] Browser LOG     === 🏁 نهاية الفحص ===
+[12:22:18.961] Browser LOG     🔍 [Debug] الـ ID المستخرج من الرابط حالياً هو: p4HUrT8vYeeHx7bY5bC0
+[12:22:18.961] Browser LOG     🔍 [Debug] الـ ID المستخرج من الرابط حالياً هو: p4HUrT8vYeeHx7bY5bC0
+[12:22:44.934] Browser LOG     ✅ تم حفظ userId بنجاح: 85t60oSmtxHdRoxXFDO8
+[12:22:44.934] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[12:22:44.934] Browser ERROR   Error setting up notifications on front-end: {"code":"app/no-app","customData":{"appName":"[DEFAULT]"},"name":"FirebaseError"}
+[12:22:45.300] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:25:55.456] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:25:55.456] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:25:55.456] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:25:55.456] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:27:17.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:27:17.593] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/admin/home" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/admin/home" tree={[...]} params={{}} cacheNode={{...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="layout" pagePath="admin/layo...">
+                <SegmentTrieNode>
+                <link>
+                <script>
+                <script>
+                <ClientSegmentRoot Component={function AdminLayout} slots={{...}} serverProvidedParams={{params:{}, ...}}>
+                  <AdminLayout params={Promise}>
+                    <div className="AdminPage ..." dir="rtl">
+                      <Sidebar navItems={[...]}>
+                        <aside className="w-64 bg-wh...">
+                          <div>
+                          <nav>
+                          <div className="p-4 border-t">
+                            <button
+                              onClick={function Sidebar[<button>.onClick]}
++                             className={"w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center t..."}
+-                             className="w-full py-2 rounded-lg text-sm font-bold flex items-center justify-center tra..."
+                            >
+                      ...
+            ...
+
+[12:28:08.572] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:28:08.572] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:28:08.572] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:28:08.572] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:03.926] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:03.926] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:03.926] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:03.926] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:55.742] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:55.742] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:55.742] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:29:55.742] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:43:55.941] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:44:31.737] Browser ERROR   خطأ تسجيل الدخول: {"error":"الإيميل أو كلمة السر غير صحيحة","success":false}
+[12:44:48.278] Browser LOG     ✅ تم حفظ userId بنجاح: V9qWnIzxhhvzFNuy6YFp
+[12:44:48.278] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[12:44:48.278] Browser ERROR   Error setting up notifications on front-end: {"code":"app/no-app","customData":{"appName":"[DEFAULT]"},"name":"FirebaseError"}
+[12:44:48.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:45:06.889] Browser LOG     ✅ تم حفظ userId بنجاح: lr57zhiGjA65ywVoY478
+[12:45:06.889] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[12:45:06.889] Browser ERROR   Error setting up notifications on front-end: {"code":"app/no-app","customData":{"appName":"[DEFAULT]"},"name":"FirebaseError"}
+[12:45:07.504] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:45:16.516] Browser LOG     ✅ تم حفظ userId بنجاح: mJfFVxZDUEN17WuSTNBY
+[12:45:16.516] Browser LOG     تم تسجيل الدخول وحفظ البيانات بنجاح ✅
+[12:45:16.516] Browser ERROR   Error setting up notifications on front-end: {"code":"app/no-app","customData":{"appName":"[DEFAULT]"},"name":"FirebaseError"}
+[12:45:16.697] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[12:47:11.670] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:47:11.670] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:47:11.670] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[12:47:11.670] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[14:09:32.420] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[14:09:32.432] Browser WARN    'oklab(0.966998 -0.000294834 -0.0029636 / 0.8)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable

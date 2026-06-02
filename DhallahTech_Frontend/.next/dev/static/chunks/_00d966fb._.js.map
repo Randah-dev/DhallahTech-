@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["file:///D:/Acadimc%20life/%D8%A7%D9%84%D8%AA%D8%B1%D9%85%20%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86/Graduation%20project%202/Frontend%205/DhallahTech/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}}]
+}

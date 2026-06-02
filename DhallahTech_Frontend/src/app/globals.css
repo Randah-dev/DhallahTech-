@@ -1,0 +1,558 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import "tailwindcss";
+
+/* ==========================================================================
+   1. Root Variables & Theme Configuration
+   ========================================================================== */
+:root {
+  /* Default System Colors */
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* DhallaTec Brand Colors & UI Tokens */
+  --primary-purple: #5E3085;
+  --dark-purple: #3A1C56;
+  --purple: #5E3085;
+  --light-lavender: #EBE6F2;
+  --medium-purple: #9E88B3;
+  --bg-light: #fbfaff;
+
+  /* Neutral Palette */
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  --light-gray: #F5F5F5;
+  --gray: #9E9E9E;
+
+  /* Layout & Structural Variables */
+  --border: #EBE6F2;
+  --shadow: 0 10px 28px rgba(20, 10, 40, 0.10);
+  --radius: 16px;
+  --font-size: 16px;
+
+  /* Gradients */
+  --bg-gradient: linear-gradient(135deg, #F5F5F5 0%, #EBE6F2 100%);
+  --btn-gradient: linear-gradient(135deg, var(--medium-purple) 0%, var(--purple) 55%, var(--dark-purple) 100%);
+}
+
+/* Tailwind Theme Overrides */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark Mode Preference Handling */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* ==========================================================================
+   2. Base Styles & Reset
+   ========================================================================== */
+* { 
+  box-sizing: border-box; 
+}
+
+html { 
+  font-size: var(--font-size); 
+}
+
+body {
+  margin: 0;
+  font-family: "Alexandria", Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background: var(--bg-gradient);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-purple); }
+
+/* ==========================================================================
+   3. Global Utilities & Animations
+   ========================================================================== */
+.hidden { 
+  display: none; 
+}
+
+.page-content { 
+  animation: fadeIn 0.4s ease; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   4. Main Layout Architecture (Flexbox)
+   ========================================================================== */
+.userPage {
+  display: flex;
+  min-height: 100vh;
+  /* Note: Flexbox inherently handles layout flipping when dir="rtl" is applied */
+}
+
+/* Explicit directional overrides for layout consistency */
+body.rtl .userPage { flex-direction: row; }
+body.ltr .userPage { flex-direction: row-reverse; }
+
+.sidebar {
+  width: 320px;
+  flex: 0 0 320px; /* Prevents the sidebar from shrinking or growing */
+  background: rgba(255, 255, 255, 0.85);
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  padding: 18px 16px;
+  backdrop-filter: blur(8px);
+}
+
+
+.userContent {
+  flex: 1;
+  padding: 40px 10%; 
+  background-color: var(--bg-light);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.userContent > * {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* ==========================================================================
+   5. Sidebar Components
+   ========================================================================== */
+.brand {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.logoBox {
+  width: 76px;
+  height: 76px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--primary-purple);
+  background: var(--white);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.10);
+}
+
+.sidebar-logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 10px;
+}
+
+/* Navigation Items */
+.menuItem, .nav-btn {
+  color: var(--black);
+  padding: 14px 14px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.menuItem:hover, .nav-btn:hover {
+  background: rgba(94, 48, 133, 0.06);
+}
+
+/* Active State Styles */
+.menuItem.active, .active-nav {
+  background: var(--btn-gradient);
+  color: var(--white);
+  box-shadow: 0 12px 28px rgba(94, 48, 133, 0.22);
+}
+
+.nav-btn i, .sidebar-icon {
+  color: var(--primary-purple);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.menuItem.active i, .active-nav i {
+  color: var(--white); /* Inverts icon color to white upon activation */
+}
+
+.nav-btn:hover i { 
+  transform: scale(1.1); 
+}
+
+.sidebarFooter {
+  margin-top: auto;
+  padding: 14px 10px 6px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.logoutBtn, .logout-btn {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: var(--white);
+  color: #1a1a1a;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.logoutBtn:hover, .logout-btn:hover { 
+  background: #f5f5f5; 
+}
+
+/* ==========================================================================
+   6. UI Cards & Containers
+   ========================================================================== */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.upload-container {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   7. Typography & Headings
+   ========================================================================== */
+.pageTitle {
+  margin: 0 0 6px;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.pageSubTitle {
+  margin: 0 0 14px;
+  color: var(--gray);
+  font-weight: 500;
+  text-align: center;
+}
+
+.hrLine {
+  border: none;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.06);
+  margin: 18px 0 22px;
+}
+
+.sectionTitle {
+  margin: 26px 0 12px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: right;
+}
+
+/* ==========================================================================
+   8. Form Elements & Inputs
+   ========================================================================== */
+.formWrap { display: flex; flex-direction: column; gap: 16px; }
+.labelRow { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 10px; font-weight: 800; }
+.requiredStar { color: var(--black); }
+.fieldTitle { text-align: right; font-weight: 900; margin: 0 0 10px; }
+
+.input, .textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 16px;
+  outline: none;
+  background: #FAFAFD;
+}
+
+.textarea { 
+  min-height: 140px; 
+  resize: none; 
+}
+
+.input:focus, .textarea:focus {
+  border-color: rgba(94, 48, 133, 0.35);
+  box-shadow: 0 0 0 4px rgba(94, 48, 133, 0.10);
+  background: var(--white);
+}
+
+.twoCols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.errorText { color: #d12222; font-weight: 800; text-align: right; margin-top: 8px; }
+
+/* ==========================================================================
+   9. Buttons
+   ========================================================================== */
+.bigSubmit {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  background: var(--btn-gradient);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 14px 30px rgba(94, 48, 133, 0.22);
+}
+
+.smallBtn {
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.smallBtn:hover { background: rgba(0, 0, 0, 0.02); }
+.dangerSmall { border-color: rgba(220, 38, 38, 0.20); color: #dc2626; }
+
+/* ==========================================================================
+   10. Dashboard Specific (Reports & Analytics)
+   ========================================================================== */
+.reportList { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+
+.reportRow {
+  background: rgba(255, 255, 255, 0.90);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 10px 24px rgba(20, 10, 40, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.reportInfo { text-align: right; }
+.reportTitle { font-weight: 900; }
+.reportDate { color: var(--gray); margin-top: 4px; font-weight: 600; font-size: 14px; }
+.rowActions { display: flex; gap: 10px; }
+
+/* Status Badges */
+.summary-badge-green {
+  background-color: #e0f2f1;
+  color: #00796b;
+  font-weight: bold;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+}
+
+.summary-badge-purple {
+  background-color: #ede7f6;
+  color: var(--primary-purple);
+  font-weight: bold;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+}
+
+/* 3D Icon Presentation */
+.icon-box-3d {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.stat-card:hover .icon-box-3d { transform: translateY(-3px); }
+
+/* ==========================================================================
+   11. Upload Module Components
+   ========================================================================== */
+.method-box {
+  border: 1.5px dashed #d1d5db;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ai-generate-btn {
+  border: 1.5px solid var(--primary-purple);
+  color: var(--primary-purple);
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ai-generate-btn:hover { background: #f5f0ff; }
+
+.or-divider {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+/* ==========================================================================
+   12. Chat Interface Components
+   ========================================================================== */
+.chat-list-item { transition: all 0.2s ease; border-right: 4px solid transparent; }
+.chat-list-item.active { background-color: #f5f0ff; border-right-color: var(--primary-purple); }
+
+.message-bubble {
+  max-width: 75%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.message-sent {
+  background-color: var(--primary-purple);
+  color: white;
+  align-self: flex-start;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.message-received {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-end;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.chat-timestamp { font-size: 0.7rem; color: #999; margin: 0 0.5rem; }
+
+.item-tag {
+  font-size: 0.75rem;
+  color: var(--primary-purple);
+  background: #ede7f6;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   13. Settings & Options Menu
+   ========================================================================== */
+.optionList { display: flex; flex-direction: column; gap: 12px; }
+
+.optionBtn {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 14px 14px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 22px rgba(20, 10, 40, 0.08);
+}
+
+.optionBtn:hover { background: rgba(255, 255, 255, 1); }
+.optionLeftIcon { opacity: 0.9; }
+
+/* ==========================================================================
+   14. Modals & Overlays
+   ========================================================================== */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 50; /* Ensures the modal overlays all other DOM elements */
+}
+
+.modalBox {
+  width: 100%;
+  max-width: 420px;
+  background: var(--white);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.modalTitle { margin: 0 0 8px; font-size: 18px; font-weight: 900; text-align: right; }
+.modalText { margin: 0 0 14px; color: var(--gray); text-align: right; font-weight: 600; }
+.modalActions { display: flex; gap: 10px; justify-content: flex-end; }
+
+.dangerBtn {
+  border: none;
+  border-radius: 14px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 900;
+  background: #dc2626;
+  color: var(--white);
+}
+
+.ghostBtn {
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 14px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+/* ==========================================================================
+   15. Responsive Design (Mobile & Tablet Breakpoints)
+   ========================================================================== */
+@media (max-width: 980px) {
+  .userPage { flex-direction: column !important; }
+  .sidebar { width: 100%; flex: auto; border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+  .userContent { padding: 22px 18px; }
+  .twoCols { grid-template-columns: 1fr; }
+  .modeRow { grid-template-columns: 1fr; }
+}

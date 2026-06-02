@@ -1,0 +1,156 @@
+
+body {
+  background: #ffffff ;
+  color: var(--black) ;
+}
+
+
+html {
+  background: var(--bg-gradient-light) ;
+}
+.AdminPage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.AdminContent {
+  flex: 0.9;
+  margin-right: 2px; 
+  padding: 40px;
+  background: #ffffff;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.home-page .grid > div {
+  grid-column: span 1 / span 1 !important;
+}
+.btn-accept-box {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-accept-box:hover {
+  background: #15803d;
+  transform: scale(1.05);
+}
+
+.btn-reject-box {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-reject-box:hover {
+  background: #b91c1c;
+  transform: scale(1.05);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  background: #EBE6F2; 
+  color: #3A1C56;     
+  font-weight: bold;
+}
+.card h3 {
+  font-size: 20px ;
+}
+
+.card p {
+  font-size: 20px ;
+}
+
+.stat-card span {
+  font-size: 20px ;
+}
+
+.stat-card p {
+  font-size: 20px ;
+}
+/* admin.css */
+
+.home-container {
+    padding: 40px;
+    background-color: #fcfcfc;
+}
+
+.welcome-section {
+    background: linear-gradient(135deg, #4B2C71 0%, #6D3B96 100%);
+    border-radius: 30px;
+    padding: 50px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(75, 44, 113, 0.15);
+    margin-bottom: 40px;
+}
+
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.task-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-color: #8B5CF6;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #F5F3FF;
+    color: #4B2C71;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.quote-box {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: #FBFAFF;
+    border-radius: 24px;
+    border: 1px dashed #DDD;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4B2C71;
+}

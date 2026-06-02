@@ -1,0 +1,83 @@
+{
+  "app": {
+    "[project]/src/app/(auth)/login/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/(auth)/signup/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/(auth)/verificationCode/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/admin/complaints/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/admin/home/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/admin/officeReq/[id]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/admin/officeReq/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/customer/chats/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/customer/create-report/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/OfficeRequest/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/chats/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/complaints/edit/[id]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/complaints/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/dashboard/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/my-reports/[id]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/my-reports/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/request-status/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/offecer/upload/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ],
+    "[project]/src/app/page": [
+      "static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
+      "static/media/797e433ab948586e-s.p.479bea2b.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
